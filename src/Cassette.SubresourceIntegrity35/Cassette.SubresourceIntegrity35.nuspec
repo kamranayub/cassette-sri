@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <version>$version$</version>
+        <authors>kayub</authors>
+        <owners>kayub</owners>
+        <id>Cassette.SubresourceIntegrity</id>
+        <title>Cassette Subresource Integrity (SRI)</title>
+        <projectUrl>https://github.com/kamranayub/cassette-sri</projectUrl>
+        <licenseUrl>https://github.com/kamranayub/cassette-sri/blob/master/LICENSE.txt</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Extension for Cassette that adds Subresource Integrity (SRI) hashing to script and stylesheet assets</description>
+        <copyright>Copyright © kayub 2016</copyright>
+        <releaseNotes>
+            For changes, see README.
+        </releaseNotes>
+        <tags>cassette sri</tags>
+    </metadata>
+    <dependencies>
+        <dependency id="Cassette" version="2.4.2" />
+    </dependencies>
+    <files>
+        <file src="readme.txt" target="readme.txt" />
+
+        <!-- .NET 3.5 will be inserted automatically -->
+        <file src="..\bin\Release\net35\Cassette.SubresourceIntegrity.pdb" target="lib\net35\Cassette.SubresourceIntegrity.pdb"/>
+
+        <!-- .NET 4.0 -->
+        <file src="..\bin\Release\net40\Cassette.SubresourceIntegrity.dll" target="lib\net40\Cassette.SubresourceIntegrity.dll"/>
+        <file src="..\bin\Release\net40\Cassette.SubresourceIntegrity.pdb" target="lib\net40\Cassette.SubresourceIntegrity.pdb"/>
+
+        <!-- .NET 4.5 -->
+        <file src="..\bin\Release\net45\Cassette.SubresourceIntegrity.dll" target="lib\net45\Cassette.SubresourceIntegrity.dll"/>
+        <file src="..\bin\Release\net45\Cassette.SubresourceIntegrity.pdb" target="lib\net45\Cassette.SubresourceIntegrity.pdb"/>
+    </files>
+</package>
