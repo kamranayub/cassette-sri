@@ -19,8 +19,7 @@ namespace Cassette.SubresourceIntegrity
                 pipeline.RemoveAt(i);
                 pipeline.Insert<AssignIntegrityRenderer>(i);
             }
-
-            ReplaceAssignHash(pipeline);
+            
             return pipeline;
         }
 
@@ -33,19 +32,9 @@ namespace Cassette.SubresourceIntegrity
                 pipeline.RemoveAt(i);
                 pipeline.Insert<AssignIntegrityRenderer>(i);
             }
-
-            ReplaceAssignHash(pipeline);
+            
             return pipeline;
         }
-
-        private void ReplaceAssignHash<T>(IBundlePipeline<T> pipeline) where T : Bundle
-        {
-            var i = pipeline.IndexOf<AssignHash>();
-            if (i >= 0)
-            {
-                pipeline.RemoveAt(i);
-                pipeline.Insert<AssignHash256>(i);
-            }
-        }
+        
     }
 }

@@ -1,5 +1,8 @@
 # Cassette Subresource Integrity (SRI)
 
+[![Build status](https://ci.appveyor.com/api/projects/status/s71ayw0c4dgqdkaa?svg=true)](https://ci.appveyor.com/project/kamranayub/cassette-sri)
+[![NuGet](https://img.shields.io/nuget/v/Cassette.SubresourceIntegrity.svg?maxAge=2592000)](https://www.nuget.org/packages/Cassette.SubresourceIntegrity/)
+
 This extension to [Cassette](http://github.com/andrewdavey/cassette) adds 
 [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
 hashing support to script and stylesheet assets/bundles.
@@ -36,6 +39,12 @@ bundles.AddUrl("http://mycdn.com/jquery/1.0/jquery.js", bundle =>
 ```
 
 You can use the [online SRI tool](https://srihash.org/) to generate a hash for a 3rd-party script.
+
+## Why would I use this?
+
+If you are intending to serve your **own** assets over CDN, you can use this in conjunction
+with a custom Cassette [CDN URL generator](http://kamranicus.com/blog/2015/10/10/azure-cdn-cassette/) to ensure your assets are hashed automatically by Cassette
+and protected by SRI.
 
 ## License
 

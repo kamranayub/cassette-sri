@@ -47,9 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Cassette.SubresourceIntegrity35\AssignHash256.cs">
-      <Link>AssignHash256.cs</Link>
-    </Compile>
     <Compile Include="..\Cassette.SubresourceIntegrity35\AssignIntegrityRenderer.cs">
       <Link>AssignIntegrityRenderer.cs</Link>
     </Compile>

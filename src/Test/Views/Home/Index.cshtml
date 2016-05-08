@@ -1,0 +1,20 @@
+﻿@{
+    Layout = null;
+    Bundles.Reference("Assets/Site.css");
+    Bundles.Reference("Assets/Site.js");
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    @Bundles.RenderStylesheets()
+    @Bundles.RenderScripts()
+</head>
+<body>
+
+</body>
+</html>
