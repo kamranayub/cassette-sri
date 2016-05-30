@@ -26,7 +26,7 @@ namespace Cassette.SubresourceIntegrity
             {
                 using (var sha256 = SHA256.Create())
                 {
-                    integrity = $"integrity=\"sha256-{Convert.ToBase64String(sha256.ComputeHash(stream))}\"";
+                    integrity = $"integrity=\"sha256-{Convert.ToBase64String(sha256.ComputeHash(stream))}\" crossorigin=\"anonymous\"";
                 }
             }
 
