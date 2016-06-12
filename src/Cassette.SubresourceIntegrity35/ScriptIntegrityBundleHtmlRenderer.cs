@@ -22,12 +22,9 @@ namespace Cassette.SubresourceIntegrity
         {
             string integrity;
 
-            using (var stream = bundle.OpenStream())
+            if (!IntegrityAttributeCache.TryGetValue(bundle, out integrity))
             {
-                using (var sha256 = SHA256.Create())
-                {
-                    integrity = $"integrity=\"sha256-{Convert.ToBase64String(sha256.ComputeHash(stream))}\" crossorigin=\"anonymous\"";
-                }
+                integrity = IntegrityAttributeCache.Add(bundle);
             }
 
             var content = $"<script src=\"{_urlGenerator.CreateBundleUrl(bundle)}\" " +

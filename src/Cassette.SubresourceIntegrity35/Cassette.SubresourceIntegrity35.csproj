@@ -57,6 +57,7 @@
     <Compile Include="ConditionalRenderer.cs" />
     <Compile Include="DebugIntegrityScriptBundleHtmlRenderer.cs" />
     <Compile Include="DebugIntegrityStylesheetBundleHtmlRenderer.cs" />
+    <Compile Include="IntegrityAttributeCache.cs" />
     <Compile Include="HtmlAttributeDictionaryExtensions.cs" />
     <Compile Include="InsertIntoPipelineSubresourceIntegrity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

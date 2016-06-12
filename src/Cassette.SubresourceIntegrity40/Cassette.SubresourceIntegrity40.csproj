@@ -65,6 +65,9 @@
     <Compile Include="..\Cassette.SubresourceIntegrity35\InsertIntoPipelineSubresourceIntegrity.cs">
       <Link>InsertIntoPipelineSubresourceIntegrity.cs</Link>
     </Compile>
+    <Compile Include="..\Cassette.SubresourceIntegrity35\IntegrityAttributeCache.cs">
+      <Link>IntegrityAttributeCache.cs</Link>
+    </Compile>
     <Compile Include="..\Cassette.SubresourceIntegrity35\ScriptIntegrityBundleHtmlRenderer.cs">
       <Link>ScriptIntegrityBundleHtmlRenderer.cs</Link>
     </Compile>
